@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: theme("colors.ink");
+  overflow-x: hidden;
+}
+
+@layer components {
+  .section-pad {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center rounded-full border-2 border-ink/10 bg-white/70 px-3 py-1 text-sm font-semibold text-ink/80 backdrop-blur;
+  }
+
+  .blob {
+    @apply pointer-events-none absolute -z-10 rounded-full blur-3xl;
+  }
+}
+
+/* Custom selection */
+::selection {
+  background: theme("colors.sunshine");
+  color: theme("colors.ink");
+}
