@@ -23,7 +23,7 @@ export const experience: Role[] = [
     emoji: "🌿",
     color: "#16c2a3",
     highlight:
-      "Debugged JavaScript, Swift & Java across iOS, Android, and Web SDKs while managing accounts totaling $2.5MM+ ACV.",
+      "Debugged JavaScript, Swift & Java across iOS, Android, and Web SDKs.",
   },
   {
     company: "Twitter",
