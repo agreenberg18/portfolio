@@ -56,9 +56,8 @@ export default function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink/70 sm:text-xl">
             Partner Engineer at <strong className="text-ink">Uber</strong> with
-            9+ years solving technical problems for external partners. I ship
-            AI-powered tools, APIs, and full-stack consumer apps, from internal
-            LLM/RAG tooling to apps live on the App Store.
+            9+ years solving technical problems for external clients. I ship
+            real-world solutions and develop full-stack consumer apps.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
