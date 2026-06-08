@@ -33,7 +33,7 @@ export const experience: Role[] = [
     emoji: "🐦",
     color: "#7c5cff",
     highlight:
-      "Supported Twitter's largest partners (Amazon, Walmart, Publicis) across the Ads API ecosystem with hands-on technical guidance.",
+      "Supported Twitter's largest partners across the Ads API ecosystem with hands-on technical guidance.",
   },
   {
     company: "Dun & Bradstreet",
@@ -51,6 +51,6 @@ export const experience: Role[] = [
     emoji: "📈",
     color: "#ffc94d",
     highlight:
-      "Led a team delivering analytics audits and custom tagging solutions for enterprise clients like LinkedIn and Intuit.",
+      "Led a team delivering analytics audits and custom tagging solutions for large enterprises.",
   },
 ];
