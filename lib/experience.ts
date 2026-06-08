@@ -14,7 +14,8 @@ export const experience: Role[] = [
     period: "Oct 2023 - Present",
     emoji: "🚗",
     color: "#1f1235",
-    highlight: "Led 0-to-1 enterprise delivery integrations.",
+    highlight:
+      "Lead 0-to-1 enterprise delivery integrations and build internal tooling that helps partners launch and scale.",
   },
   {
     company: "Branch",
@@ -23,7 +24,7 @@ export const experience: Role[] = [
     emoji: "🌿",
     color: "#16c2a3",
     highlight:
-      "Debugged JavaScript, Swift & Java across iOS, Android, and Web SDKs.",
+      "Helped enterprise clients integrate and troubleshoot mobile and web SDKs across iOS, Android, and web.",
   },
   {
     company: "Twitter",
@@ -32,7 +33,7 @@ export const experience: Role[] = [
     emoji: "🐦",
     color: "#7c5cff",
     highlight:
-      "Supported Twitter's largest partners (Amazon, Walmart, Publicis) on the Ads API ecosystem with technical guidance and code-level support.",
+      "Supported Twitter's largest partners (Amazon, Walmart, Publicis) across the Ads API ecosystem with hands-on technical guidance.",
   },
   {
     company: "Dun & Bradstreet",
@@ -41,7 +42,7 @@ export const experience: Role[] = [
     emoji: "📊",
     color: "#ff6b6b",
     highlight:
-      "Built Python scripts and React/Vue web apps to automate processes (20+ business hours saved per month) and a GTM community tag integrating Visitor Intelligence into Google Analytics.",
+      "Delivered marketing technology implementations and built internal tools and web apps to automate manual workflows.",
   },
   {
     company: "3Q Digital",
@@ -50,6 +51,6 @@ export const experience: Role[] = [
     emoji: "📈",
     color: "#ffc94d",
     highlight:
-      "Led a team delivering Tag Management & Google Analytics audits and custom JavaScript tagging solutions for clients like LinkedIn and Intuit.",
+      "Led a team delivering analytics audits and custom tagging solutions for enterprise clients like LinkedIn and Intuit.",
   },
 ];
