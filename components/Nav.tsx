@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import posthog from "posthog-js";
 
 const links = [
   { label: "About", href: "#about" },
@@ -49,6 +50,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
+              onClick={() => posthog.capture("nav_link_clicked", { label: link.label.toLowerCase(), href: link.href })}
               className="rounded-full px-3 py-1.5 text-sm font-semibold text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
             >
               {link.label}

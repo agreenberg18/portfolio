@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import posthog from "posthog-js";
 
 export default function Contact() {
   return (
@@ -23,6 +24,7 @@ export default function Contact() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
             href="mailto:Andrew.Greenberg18@gmail.com"
+            onClick={() => posthog.capture("contact_link_clicked", { link_type: "email" })}
             className="rounded-full bg-white px-6 py-3 font-display font-semibold text-ink transition-transform hover:-translate-y-0.5"
           >
             Andrew.Greenberg18@gmail.com
@@ -31,6 +33,7 @@ export default function Contact() {
             href="https://github.com/agreenberg18"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => posthog.capture("contact_link_clicked", { link_type: "github" })}
             className="rounded-full border-2 border-white/60 px-6 py-3 font-display font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             GitHub ↗
@@ -39,6 +42,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/andrew-greenberg-45980611b/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => posthog.capture("contact_link_clicked", { link_type: "linkedin" })}
             className="rounded-full border-2 border-white/60 px-6 py-3 font-display font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             LinkedIn ↗

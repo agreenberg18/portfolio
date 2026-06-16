@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import posthog from "posthog-js";
 import type { Project } from "@/lib/projects";
 
 function PhonePreview({ project }: { project: Project }) {
@@ -100,6 +101,7 @@ export default function ProjectCard({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => posthog.capture("project_link_clicked", { project_id: project.id, project_name: project.name, link_label: link.label, link_href: link.href })}
                 className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 font-display font-semibold text-cream transition-transform hover:-translate-y-0.5"
               >
                 {link.label} ↗

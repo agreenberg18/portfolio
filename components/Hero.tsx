@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import posthog from "posthog-js";
 
 const floaters = [
   { emoji: "🀄", className: "left-[6%] top-[18%]", delay: 0 },
@@ -63,12 +64,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#work"
+              onClick={() => posthog.capture("hero_cta_clicked", { label: "see_my_work" })}
               className="rounded-full bg-ink px-6 py-3 font-display font-semibold text-cream shadow-playful-lg transition-transform hover:-translate-y-0.5"
             >
               See my work →
             </a>
             <a
               href="mailto:Andrew.Greenberg18@gmail.com"
+              onClick={() => posthog.capture("hero_cta_clicked", { label: "say_hello" })}
               className="rounded-full border-2 border-ink/15 bg-white/70 px-6 py-3 font-display font-semibold text-ink backdrop-blur transition-transform hover:-translate-y-0.5"
             >
               Say hello
@@ -77,6 +80,7 @@ export default function Hero() {
               href="https://github.com/agreenberg18"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => posthog.capture("hero_cta_clicked", { label: "github" })}
               className="rounded-full border-2 border-ink/15 bg-white/70 px-6 py-3 font-display font-semibold text-ink backdrop-blur transition-transform hover:-translate-y-0.5"
             >
               GitHub
@@ -85,6 +89,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/andrew-greenberg-45980611b/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => posthog.capture("hero_cta_clicked", { label: "linkedin" })}
               className="rounded-full border-2 border-ink/15 bg-white/70 px-6 py-3 font-display font-semibold text-ink backdrop-blur transition-transform hover:-translate-y-0.5"
             >
               LinkedIn
