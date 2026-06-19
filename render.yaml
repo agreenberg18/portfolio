@@ -5,6 +5,11 @@ services:
     buildCommand: npm install && npm run build
     staticPublishPath: ./out
     pullRequestPreviewsEnabled: true
+    envVars:
+      - key: NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN
+        value: phc_CwKFkS4BCCKJZjicXBTgTqQA7beZKaVh9GLfTQDAu9ZL
+      - key: NEXT_PUBLIC_POSTHOG_HOST
+        value: https://us.i.posthog.com
     routes:
       - type: rewrite
         source: /*
