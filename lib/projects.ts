@@ -20,6 +20,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "mahjong-mamas",
+    name: "Mahjong Mamas",
+    tagline: "Where every game night is a grand slam.",
+    description:
+      "A full-stack social club app shipped to the App Store and Google Play with 5★ ratings and 400+ monthly active users. Multi-tenant clubs with role-based access, invite codes, recurring game scheduling, RSVP/waitlist management, and in-game chat. Built with React Native (Expo) + Supabase (Postgres, Edge Functions, Realtime), plus Stripe for payments, push notifications, SSO, and calendar sync.",
+    badge: "5★ on the App Store",
+    emoji: "🀄",
+    gradient: "from-teal via-violet to-bubblegum",
+    accent: "#16c2a3",
+    tags: ["React Native", "Expo", "Supabase", "Stripe", "EAS", "Realtime"],
+    links: [{ label: "mahjongmamas.app", href: "https://mahjongmamas.app" }],
+    images: [
+      "/projects/mahjong-home.png",
+      "/projects/mahjong-reservation.png",
+      "/projects/mahjong-create.png",
+    ],
+    imageStyle: "phone",
+  },
+  {
     id: "dinner-spinner",
     name: "Dinner Spinner",
     tagline: "Can't decide where to eat? Give it a spin.",
@@ -39,25 +58,6 @@ export const projects: Project[] = [
     ],
     images: [],
     imageStyle: "motif",
-  },
-  {
-    id: "mahjong-mamas",
-    name: "Mahjong Mamas",
-    tagline: "Where every game night is a grand slam.",
-    description:
-      "A full-stack social club app shipped to the App Store and Google Play with 5★ ratings and 400+ monthly active users. Multi-tenant clubs with role-based access, invite codes, recurring game scheduling, RSVP/waitlist management, and in-game chat. Built with React Native (Expo) + Supabase (Postgres, Edge Functions, Realtime), plus Stripe for payments, push notifications, SSO, and calendar sync.",
-    badge: "5★ on the App Store",
-    emoji: "🀄",
-    gradient: "from-teal via-violet to-bubblegum",
-    accent: "#16c2a3",
-    tags: ["React Native", "Expo", "Supabase", "Stripe", "EAS", "Realtime"],
-    links: [{ label: "mahjongmamas.app", href: "https://mahjongmamas.app" }],
-    images: [
-      "/projects/mahjong-home.png",
-      "/projects/mahjong-reservation.png",
-      "/projects/mahjong-create.png",
-    ],
-    imageStyle: "phone",
   },
   {
     id: "ibetyou",
