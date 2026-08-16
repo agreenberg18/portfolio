@@ -15,11 +15,10 @@ export default function Contact() {
       >
         <span className="text-5xl">👋</span>
         <h2 className="mt-4 font-display text-4xl font-bold sm:text-5xl">
-          Let&apos;s build something fun.
+          Say hello.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-white/90">
-          Whether it&apos;s a tricky integration, an AI-powered tool, or a
-          weekend app idea, I&apos;d love to hear about it.
+          Always happy to connect. Reach me by email, or find me on LinkedIn.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
@@ -28,15 +27,6 @@ export default function Contact() {
             className="rounded-full bg-white px-6 py-3 font-display font-semibold text-ink transition-transform hover:-translate-y-0.5"
           >
             Andrew.Greenberg18@gmail.com
-          </a>
-          <a
-            href="https://github.com/agreenberg18"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => posthog.capture("contact_link_clicked", { link_type: "github" })}
-            className="rounded-full border-2 border-white/60 px-6 py-3 font-display font-semibold text-white transition-transform hover:-translate-y-0.5"
-          >
-            GitHub ↗
           </a>
           <a
             href="https://www.linkedin.com/in/andrew-greenberg-45980611b/"
