@@ -48,7 +48,7 @@ export default function Hero() {
           <h1 className="font-display text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
             Hi, I&apos;m Andrew.{" "}
             <span className="bg-gradient-to-r from-coral via-bubblegum to-violet bg-clip-text text-transparent">
-              I build things people actually use.
+              I work at the intersection of engineering and customers.
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink/70 sm:text-xl">
