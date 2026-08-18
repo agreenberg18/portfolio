@@ -4,13 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import posthog from "posthog-js";
 
-const floaters = [
-  { emoji: "🀄", className: "left-[6%] top-[18%]", delay: 0 },
-  { emoji: "🎲", className: "right-[8%] top-[12%]", delay: 0.6 },
-  { emoji: "🎡", className: "left-[12%] bottom-[14%]", delay: 1.1 },
-  { emoji: "📈", className: "right-[10%] bottom-[20%]", delay: 0.3 },
-];
-
 export default function Hero() {
   return (
     <section
@@ -21,23 +14,6 @@ export default function Hero() {
       <div className="blob left-[-10%] top-[-5%] h-80 w-80 bg-coral/40" />
       <div className="blob right-[-8%] top-[10%] h-96 w-96 bg-violet/40" />
       <div className="blob bottom-[-10%] left-[30%] h-80 w-80 bg-teal/30" />
-
-      {/* Floating emojis */}
-      {floaters.map((f) => (
-        <motion.span
-          key={f.emoji + f.className}
-          className={`pointer-events-none absolute hidden text-4xl sm:block lg:text-5xl ${f.className}`}
-          animate={{ y: [0, -22, 0], rotate: [-6, 6, -6] }}
-          transition={{
-            duration: 6,
-            delay: f.delay,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          {f.emoji}
-        </motion.span>
-      ))}
 
       <div className="section-pad grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <motion.div
