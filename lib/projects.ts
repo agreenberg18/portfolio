@@ -43,17 +43,21 @@ export const projects: Project[] = [
     name: "Dinner Spinner",
     tagline: "Can't decide where to eat? Give it a spin.",
     description:
-      "A restaurant-roulette app that picks local spots for you based on distance, price, and cuisine. Web front-end in React with a native Swift iOS app, backed by a Node/Express API hitting Google Maps. ~350 monthly active users.",
+      "A restaurant-roulette app that picks local spots for you based on distance, price, and cuisine. Built with React Native (Expo) for iOS and Android, and on the web, backed by a Node/Express API hitting Google Maps. ~350 monthly active users.",
     badge: "4.3★ on the App Store",
     emoji: "🎡",
     gradient: "from-coral via-bubblegum to-sunshine",
     accent: "#ff6b6b",
-    tags: ["React", "Swift", "Node/Express", "Google Maps API"],
+    tags: ["React Native", "Expo", "TypeScript", "Node/Express", "Google Maps API", "EAS"],
     links: [
       { label: "Visit dinnerspinner.io", href: "https://dinnerspinner.io" },
       {
         label: "iOS App",
         href: "https://apps.apple.com/us/app/dinner-spinner/id6474522598",
+      },
+      {
+        label: "Android App",
+        href: "https://play.google.com/store/apps/details?id=io.dinnerspinner.dinspin",
       },
     ],
     images: [],
