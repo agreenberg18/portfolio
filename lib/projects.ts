@@ -60,8 +60,8 @@ export const projects: Project[] = [
         href: "https://play.google.com/store/apps/details?id=io.dinnerspinner.dinspin",
       },
     ],
-    images: [],
-    imageStyle: "motif",
+    images: ["/projects/dinspin-home.png", "/projects/dinspin-wheel.png"],
+    imageStyle: "phone",
   },
   {
     id: "ibetyou",
