@@ -37,7 +37,7 @@ export default function Nav() {
       >
         <a
           href="#top"
-          className="flex items-center gap-2 rounded-full px-2 py-1 font-display text-lg font-bold text-ink"
+          className="flex shrink-0 items-center gap-2 rounded-full px-1 py-1 font-display text-lg font-bold text-ink sm:px-2"
         >
           <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-coral to-violet text-white">
             AG
@@ -45,13 +45,13 @@ export default function Nav() {
           <span className="hidden sm:inline">Andrew</span>
         </a>
 
-        <div className="flex items-center gap-1">
+        <div className="flex min-w-0 flex-1 items-center justify-end gap-0.5 sm:gap-1">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => posthog.capture("nav_link_clicked", { label: link.label.toLowerCase(), href: link.href })}
-              className="rounded-full px-3 py-1.5 text-sm font-semibold text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
+              className="whitespace-nowrap rounded-full px-2 py-1.5 text-sm font-semibold text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink sm:px-3"
             >
               {link.label}
             </a>
