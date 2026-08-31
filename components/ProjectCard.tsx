@@ -94,19 +94,41 @@ export default function ProjectCard({
         </div>
 
         {project.links.length > 0 && (
-          <div className="mt-6 flex flex-wrap gap-3">
-            {project.links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => posthog.capture("project_link_clicked", { project_id: project.id, project_name: project.name, link_label: link.label, link_href: link.href })}
-                className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 font-display font-semibold text-cream transition-transform hover:-translate-y-0.5"
-              >
-                {link.label} ↗
-              </a>
-            ))}
+          <div className="mt-6 space-y-3">
+            {(() => {
+              const storeLinks = project.links.filter((l) =>
+                /ios|android/i.test(l.label),
+              );
+              const webLinks = project.links.filter(
+                (l) => !/ios|android/i.test(l.label),
+              );
+              const renderLink = (link: (typeof project.links)[number]) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => posthog.capture("project_link_clicked", { project_id: project.id, project_name: project.name, link_label: link.label, link_href: link.href })}
+                  className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 font-display font-semibold text-cream transition-transform hover:-translate-y-0.5"
+                >
+                  {link.label} ↗
+                </a>
+              );
+              return (
+                <>
+                  {webLinks.length > 0 && (
+                    <div className="flex flex-wrap justify-center gap-3">
+                      {webLinks.map(renderLink)}
+                    </div>
+                  )}
+                  {storeLinks.length > 0 && (
+                    <div className="flex flex-wrap justify-center gap-3">
+                      {storeLinks.map(renderLink)}
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
       </div>
