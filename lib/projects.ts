@@ -30,7 +30,17 @@ export const projects: Project[] = [
     gradient: "from-teal via-violet to-bubblegum",
     accent: "#16c2a3",
     tags: ["React Native", "Expo", "Supabase", "Stripe", "EAS", "Realtime"],
-    links: [{ label: "mahjongmamas.app", href: "https://mahjongmamas.app" }],
+    links: [
+      { label: "mahjongmamas.app", href: "https://mahjongmamas.app" },
+      {
+        label: "iOS App",
+        href: "https://apps.apple.com/app/id6762331619",
+      },
+      {
+        label: "Android App",
+        href: "https://play.google.com/store/apps/details?id=com.mahjonmamas.socialclub",
+      },
+    ],
     images: [
       "/projects/mahjong-home.png",
       "/projects/mahjong-reservation.png",
@@ -65,10 +75,10 @@ export const projects: Project[] = [
   },
   {
     id: "ibetyou",
-    name: "iBetYou",
+    name: "iBetYou AI",
     tagline: "Friendly wagers, settled by AI judges.",
     description:
-      "A cross-platform friendly-betting app with a 4-step bet wizard, character-themed AI judges powered by ElevenLabs TTS, a dice-based horse-race mini-game, friends & groups, a full bet lifecycle with ledger/settlement, and a native iMessage extension. Built on Expo React Native + Supabase with push notifications and deep linking.",
+      "A cross-platform friendly-betting app with a 4-step bet wizard, character-themed AI judges powered by ElevenLabs TTS, a dice-based horse-race mini-game, friends & groups, a full bet lifecycle with ledger/settlement, and a native iMessage extension. Built on Expo React Native + Supabase with push notifications and deep linking. Reach out if you want to join the beta!",
     badge: "Closed Beta",
     emoji: "🎲",
     gradient: "from-violet via-coral to-sunshine",
