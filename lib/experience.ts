@@ -9,13 +9,22 @@ export type Role = {
 
 export const experience: Role[] = [
   {
+    company: "ProRata",
+    title: "Sr. Partner Solutions Engineer",
+    period: "Nov 2026 - Present",
+    emoji: "🤖",
+    color: "#6366f1",
+    highlight:
+      "Help partners integrate and onboard onto the Gist AI platform.",
+  },
+  {
     company: "Uber",
     title: "Partner Engineer",
-    period: "Oct 2023 - Present",
+    period: "Oct 2023 - Nov 2026",
     emoji: "🚗",
     color: "#1f1235",
     highlight:
-      "Lead 0-to-1 enterprise delivery integrations and build internal tooling that helps partners launch and scale.",
+      "Led 0-to-1 enterprise delivery integrations and built internal tooling that helps partners launch and scale.",
   },
   {
     company: "Branch",

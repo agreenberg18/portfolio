@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://andrewgreenberg.dev"),
   title: "Andrew Greenberg | Partner Engineer & Builder",
   description:
-    "Andrew Greenberg is a Partner Engineer at Uber and full-stack builder shipping AI-powered tools and consumer apps. Explore Dinner Spinner, Mahjong Mamas, iBetYou, and more.",
+    "Andrew Greenberg is a Partner Engineer and full-stack builder shipping AI-powered tools and consumer apps. Explore Dinner Spinner, Mahjong Mamas, iBetYou, and more.",
   keywords: [
     "Andrew Greenberg",
     "Partner Engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Andrew Greenberg | Partner Engineer & Builder",
     description:
-      "Partner Engineer at Uber building AI-powered tools and consumer apps. Dinner Spinner, Mahjong Mamas, iBetYou & more.",
+      "Partner Engineer building AI-powered tools and consumer apps. Dinner Spinner, Mahjong Mamas, iBetYou & more.",
     type: "website",
     images: ["/andrew_headshot.png"],
   },

@@ -28,9 +28,9 @@ export default function Hero() {
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink/70 sm:text-xl">
-            Partner Engineer at <strong className="text-ink">Uber</strong> with
-            9+ years solving technical problems for external clients. I ship
-            real-world solutions and develop full-stack consumer apps.
+            Partner Engineer with over 10 years solving technical problems for
+            external clients. I ship real-world solutions and develop full-stack
+            consumer apps.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
