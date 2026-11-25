@@ -24,7 +24,7 @@ export const projects: Project[] = [
     name: "Mahjong Mamas",
     tagline: "Where every game night is a grand slam.",
     description:
-      "A full-stack social club app shipped to the App Store and Google Play with 5★ ratings and 400+ monthly active users. Multi-tenant clubs with role-based access, invite codes, recurring game scheduling, RSVP/waitlist management, and in-game chat. Built with React Native (Expo) + Supabase (Postgres, Edge Functions, Realtime), plus Stripe for payments, push notifications, SSO, and calendar sync.",
+      "A full-stack social club app shipped to the App Store and Google Play with 5★ ratings and 600+ monthly active users. Multi-tenant clubs with role-based access, invite codes, recurring game scheduling, RSVP/waitlist management, and in-game chat. Built with React Native (Expo) + Supabase (Postgres, Edge Functions, Realtime), plus Stripe for payments, push notifications, SSO, and calendar sync.",
     badge: "5★ on the App Store",
     emoji: "🀄",
     gradient: "from-teal via-violet to-bubblegum",
